@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <div id="num">
+            <div id="n1">
+                <div id="num2" class="num" v-bind:class="`${w2c}`">{{num2}}</div>
+            </div>
+            <div id="n2">
+                <div id="num3" class="num" v-bind:class="`${w3c}`">{{num3}}</div>
+                <div id="num1" class="num" v-bind:class="`${w1c}`">{{num1}}</div>
+                <div id="num4" class="num" v-bind:class="`${w4c}`">{{num4}}</div>
+            </div>
+            <div id="n3">
+                <div id="num5" class="num" v-bind:class="`${w5c}`">{{num5}}</div>
+            </div>
+        </div>
+
+        <div id="button">
+            <div>
+                <div id="c1down" class="button" v-on:click="c1down"></div>
+                <div id="c2down" class="button" v-on:click="c2down"></div>
+            </div>
+            <div>
+                <div id="r1right" class="button" v-on:click="r1right"></div>
+                <div id="r2right" class="button" v-on:click="r2right"></div>
+            </div>
+        </div>
+        <div id="initButton" v-on:click="initialize">初期化する</div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

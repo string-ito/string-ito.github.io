@@ -1,0 +1,141 @@
+body {
+    background-color: blanchedalmond;
+    user-select: none;
+}
+
+#app {
+    background-color: lemonchiffon;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100px;
+}
+
+#initButton {
+    display: block;
+    width: 200px;
+    border: 1px solid black;
+    background-color: white;
+    font-size: larger;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    margin-left: 25px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#num {
+    margin-bottom: 40px;
+}
+
+.num {
+    display: block;
+    background-color: cornsilk;
+    border: 1px solid black;
+    height: 75px;
+    width: 75px;
+    margin: 4px;
+    text-align: center;
+    line-height: 78px;
+    font-size: xx-large;
+}
+
+#n1 {
+    margin-left: 85px;
+}
+
+#n3 {
+    margin-left: 85px;
+}
+
+#n2 {
+    display: flex;
+}
+
+.c1 {
+    background-color: rgb(85, 163, 41);
+}
+
+.c2 {
+    background-color: rgb(252, 245, 76);
+}
+
+.c3 {
+    background-color: rgb(227, 72, 30);
+}
+
+.c4 {
+    background-color: rgb(230, 153, 56);
+}
+
+.c5 {
+    background-color: rgb(52, 103, 248);
+}
+
+.c6 {
+    background-color: white;
+}
+
+#button {
+    margin-left: 55px;
+}
+
+.button {
+    display: inline-block;
+    background-color: greenyellow;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.r {
+    display: flex;
+}
+
+#w2 {
+    margin-left: 66px;
+}
+
+#w5 {
+    margin-left: 66px;
+}
+
+#w6 {
+    margin-left: 66px;
+}
+
+.panel {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+#w1 .panel {
+    background-color: blanchedalmond;
+}
+
+#w2 .panel {
+    background-color: burlywood;
+}
+
+#w3 .panel {
+    background-color: darkgrey;
+}
+
+#w4 .panel {
+    background-color: khaki;
+}
+
+#w5 .panel {
+    background-color: lightgreen;
+}
+
+#w6 .panel {
+    background-color: orchid;
+}
