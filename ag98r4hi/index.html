@@ -85,9 +85,6 @@
             <div id="turn">
                 <div class="c" v-bind:class="[currentColor===1 ? 'l' : 'b']"></div>
             </div>
-            <div id="on_number">{{number}} /
-                <div class="circle"></div>
-            </div>
         </div>
         <div id="board4">
             <div class="c" id="5_1_1" v-on:click="cn" v-bind:class="[n.step5.r1.c1.value===1 ? 'l' : 'b', n.step5.r1.c1.click===true ? 'clicked' : '']">{{n.step5.r1.c1.value}}</div>
@@ -132,7 +129,14 @@
             <div class="c" id="5_5_4" v-on:click="cn" v-bind:class="[n.step5.r5.c4.value===1 ? 'l' : 'b', n.step5.r5.c4.click===true ? 'clicked' : '']">{{n.step5.r5.c4.value}}</div>
             <div class="c" id="5_5_5" v-on:click="cn" v-bind:class="[n.step5.r5.c5.value===1 ? 'l' : 'b', n.step5.r5.c5.click===true ? 'clicked' : '']">{{n.step5.r5.c5.value}}</div>
         </div>
-        <div id="initButton" v-on:click="initialize">初期化する</div>
+        <div id="nu">
+            <div id="on_number">{{number}} /
+                <div class="circle"></div>
+            </div>
+        </div>
+        <div id="in">
+            <div id="initButton" v-on:click="initialize">初期化する</div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
