@@ -814,5 +814,5 @@ var app = new Vue({
 });
 
 var c = () => {
-    alert("clear!\npassword : isreverdimaryp");
+    alert("clear!");
 }

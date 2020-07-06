@@ -120,10 +120,12 @@ body {
 #nu {
     text-align: center;
     height: 80px;
+    margin-left: -20px;
 }
 
 #in {
     text-align: center;
+    margin-left: -20px;
 }
 
 #on_number {
