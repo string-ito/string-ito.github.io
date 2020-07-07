@@ -32,13 +32,18 @@ body {
     display: inline-block;
     width: 25px;
     height: 25px;
-    transform: rotate(45deg);
+    /* transform: rotate(45deg); */
     margin-right: 30px;
     cursor: pointer;
-    text-indent: 100%;
-    overflow: hidden;
+    /* text-indent: 100%; */
+    /* overflow: hidden; */
     white-space: nowrap;
     border-radius: 90%;
+    margin-bottom: 7px;
+}
+
+.v {
+    color: rgba(0, 0, 0, 0%);
 }
 
 .l {
@@ -76,7 +81,7 @@ body {
 }
 
 #board4 {
-    padding-top: 40px;
+    padding-top: 33px;
     padding-left: 100px;
     margin-bottom: 30px;
 }
@@ -144,4 +149,10 @@ body {
     border-right: 165px solid rgba(255, 255, 128, 0.3);
     border-bottom: 180px solid rgba(255, 228, 176, 0.3);
     border-left: 165px solid rgba(255, 255, 128, 0.3);
+}
+
+.hn {
+    font-style: black;
+    margin-left: 7px;
+    z-index: -9;
 }

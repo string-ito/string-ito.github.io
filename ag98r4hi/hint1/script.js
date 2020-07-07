@@ -780,7 +780,7 @@ var app = new Vue({
         },
         cn: function(event) {
             console.log(event.target.id);
-            const target = event.target.id.split('_');
+            const target = event.target.closest('.c').id.split('_');
             const s = parseInt(target[0]);
             const r = parseInt(target[1]);
             const c = parseInt(target[2]);
@@ -798,7 +798,12 @@ var app = new Vue({
             const s1 = s.flatMap(k => { return Object.values(k); });
             const aa = s1.flatMap(k => { return Object.values(k); }).filter(k => k.value === 1).length;
             return aa;
-        }
+        },
+        step5_r1_c1: function() { return this.n.step5.r1.c1.value; },
+        step5_r1_c2: function() { return this.n.step5.r1.c2.value; },
+        step5_r1_c3: function() { return this.n.step5.r1.c3.value; },
+        step5_r1_c4: function() { return this.n.step5.r1.c4.value; },
+        step5_r1_c5: function() { return this.n.step5.r1.c5.value; },
     },
     watch: {
         n: {
