@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>put right light omake</title>
+</head>
+
+<body>
+    <div id="app">
+        <div id="p">
+            <div id="test" style="display: block; text-align: center;">
+                <div>
+                    今の手番（クリックで変更可）：
+                    <div class="c" style="text-indent: 0%;" id="current" v-on:click="changecolor" v-bind:class="[currentColor===1 ? 'l':'b']">{{currentColor}}</div>
+                </div>
+                <div id="t1">
+                    <div class="c" id="1_1_1" v-on:click="cn" v-bind:class="[n.step1.r1.c1.value===1 ? 'l' : 'b', n.step1.r1.c1.click===true ? 'clicked' : '']">{{n.step1.r1.c1.value}}</div>
+                </div>
+                <div id="t2">
+                    <div class="c" id="2_1_1" v-on:click="cn" v-bind:class="[n.step2.r1.c1.value===1 ? 'l' : 'b', n.step2.r1.c1.click===true ? 'clicked' : '']">{{n.step2.r1.c1.value}}</div>
+                    <div class="c" id="2_1_2" v-on:click="cn" v-bind:class="[n.step2.r1.c2.value===1 ? 'l' : 'b', n.step2.r1.c2.click===true ? 'clicked' : '']">{{n.step2.r1.c2.value}}</div><br>
+                    <div class="c" id="2_2_1" v-on:click="cn" v-bind:class="[n.step2.r2.c1.value===1 ? 'l' : 'b', n.step2.r2.c1.click===true ? 'clicked' : '']">{{n.step2.r2.c1.value}}</div>
+                    <div class="c" id="2_2_2" v-on:click="cn" v-bind:class="[n.step2.r2.c2.value===1 ? 'l' : 'b', n.step2.r2.c2.click===true ? 'clicked' : '']">{{n.step2.r2.c2.value}}</div>
+                </div>
+                <div id="t3">
+                    <div class="c" id="3_1_1" v-on:click="cn" v-bind:class="[n.step3.r1.c1.value===1 ? 'l' : 'b', n.step3.r1.c1.click===true ? 'clicked' : '']">{{n.step3.r1.c1.value}}</div>
+                    <div class="c" id="3_1_2" v-on:click="cn" v-bind:class="[n.step3.r1.c2.value===1 ? 'l' : 'b', n.step3.r1.c2.click===true ? 'clicked' : '']">{{n.step3.r1.c2.value}}</div>
+                    <div class="c" id="3_1_3" v-on:click="cn" v-bind:class="[n.step3.r1.c3.value===1 ? 'l' : 'b', n.step3.r1.c3.click===true ? 'clicked' : '']">{{n.step3.r1.c3.value}}</div><br>
+                    <div class="c" id="3_2_1" v-on:click="cn" v-bind:class="[n.step3.r2.c1.value===1 ? 'l' : 'b', n.step3.r2.c1.click===true ? 'clicked' : '']">{{n.step3.r2.c1.value}}</div>
+                    <div class="c" id="3_2_2" v-on:click="cn" v-bind:class="[n.step3.r2.c2.value===1 ? 'l' : 'b', n.step3.r2.c2.click===true ? 'clicked' : '']">{{n.step3.r2.c2.value}}</div>
+                    <div class="c" id="3_2_3" v-on:click="cn" v-bind:class="[n.step3.r2.c3.value===1 ? 'l' : 'b', n.step3.r2.c3.click===true ? 'clicked' : '']">{{n.step3.r2.c3.value}}</div><br>
+                    <div class="c" id="3_3_1" v-on:click="cn" v-bind:class="[n.step3.r3.c1.value===1 ? 'l' : 'b', n.step3.r3.c1.click===true ? 'clicked' : '']">{{n.step3.r3.c1.value}}</div>
+                    <div class="c" id="3_3_2" v-on:click="cn" v-bind:class="[n.step3.r3.c2.value===1 ? 'l' : 'b', n.step3.r3.c2.click===true ? 'clicked' : '']">{{n.step3.r3.c2.value}}</div>
+                    <div class="c" id="3_3_3" v-on:click="cn" v-bind:class="[n.step3.r3.c3.value===1 ? 'l' : 'b', n.step3.r3.c3.click===true ? 'clicked' : '']">{{n.step3.r3.c3.value}}</div>
+                </div>
+                <div id="t4">
+                    <div class="c" id="4_1_1" v-on:click="cn" v-bind:class="[n.step4.r1.c1.value===1 ? 'l' : 'b', n.step4.r1.c1.click===true ? 'clicked' : '']">{{n.step4.r1.c1.value}}</div>
+                    <div class="c" id="4_1_2" v-on:click="cn" v-bind:class="[n.step4.r1.c2.value===1 ? 'l' : 'b', n.step4.r1.c2.click===true ? 'clicked' : '']">{{n.step4.r1.c2.value}}</div>
+                    <div class="c" id="4_1_3" v-on:click="cn" v-bind:class="[n.step4.r1.c3.value===1 ? 'l' : 'b', n.step4.r1.c3.click===true ? 'clicked' : '']">{{n.step4.r1.c3.value}}</div>
+                    <div class="c" id="4_1_4" v-on:click="cn" v-bind:class="[n.step4.r1.c4.value===1 ? 'l' : 'b', n.step4.r1.c4.click===true ? 'clicked' : '']">{{n.step4.r1.c4.value}}</div><br>
+                    <div class="c" id="4_2_1" v-on:click="cn" v-bind:class="[n.step4.r2.c1.value===1 ? 'l' : 'b', n.step4.r2.c1.click===true ? 'clicked' : '']">{{n.step4.r2.c1.value}}</div>
+                    <div class="c" id="4_2_2" v-on:click="cn" v-bind:class="[n.step4.r2.c2.value===1 ? 'l' : 'b', n.step4.r2.c2.click===true ? 'clicked' : '']">{{n.step4.r2.c2.value}}</div>
+                    <div class="c" id="4_2_3" v-on:click="cn" v-bind:class="[n.step4.r2.c3.value===1 ? 'l' : 'b', n.step4.r2.c3.click===true ? 'clicked' : '']">{{n.step4.r2.c3.value}}</div>
+                    <div class="c" id="4_2_4" v-on:click="cn" v-bind:class="[n.step4.r2.c4.value===1 ? 'l' : 'b', n.step4.r2.c4.click===true ? 'clicked' : '']">{{n.step4.r2.c4.value}}</div><br>
+                    <div class="c" id="4_3_1" v-on:click="cn" v-bind:class="[n.step4.r3.c1.value===1 ? 'l' : 'b', n.step4.r3.c1.click===true ? 'clicked' : '']">{{n.step4.r3.c1.value}}</div>
+                    <div class="c" id="4_3_2" v-on:click="cn" v-bind:class="[n.step4.r3.c2.value===1 ? 'l' : 'b', n.step4.r3.c2.click===true ? 'clicked' : '']">{{n.step4.r3.c2.value}}</div>
+                    <div class="c" id="4_3_3" v-on:click="cn" v-bind:class="[n.step4.r3.c3.value===1 ? 'l' : 'b', n.step4.r3.c3.click===true ? 'clicked' : '']">{{n.step4.r3.c3.value}}</div>
+                    <div class="c" id="4_3_4" v-on:click="cn" v-bind:class="[n.step4.r3.c4.value===1 ? 'l' : 'b', n.step4.r3.c4.click===true ? 'clicked' : '']">{{n.step4.r3.c4.value}}</div><br>
+                    <div class="c" id="4_4_1" v-on:click="cn" v-bind:class="[n.step4.r4.c1.value===1 ? 'l' : 'b', n.step4.r4.c1.click===true ? 'clicked' : '']">{{n.step4.r4.c1.value}}</div>
+                    <div class="c" id="4_4_2" v-on:click="cn" v-bind:class="[n.step4.r4.c2.value===1 ? 'l' : 'b', n.step4.r4.c2.click===true ? 'clicked' : '']">{{n.step4.r4.c2.value}}</div>
+                    <div class="c" id="4_4_3" v-on:click="cn" v-bind:class="[n.step4.r4.c3.value===1 ? 'l' : 'b', n.step4.r4.c3.click===true ? 'clicked' : '']">{{n.step4.r4.c3.value}}</div>
+                    <div class="c" id="4_4_4" v-on:click="cn" v-bind:class="[n.step4.r4.c4.value===1 ? 'l' : 'b', n.step4.r4.c4.click===true ? 'clicked' : '']">{{n.step4.r4.c4.value}}</div>
+                </div>
+                <div id="t5">
+                    <div class="c" id="5_1_1" v-on:click="cn" v-bind:class="[n.step5.r1.c1.value===1 ? 'l' : 'b', n.step5.r1.c1.click===true ? 'clicked' : '']">{{n.step5.r1.c1.value}}</div>
+                    <div class="c" id="5_1_2" v-on:click="cn" v-bind:class="[n.step5.r1.c2.value===1 ? 'l' : 'b', n.step5.r1.c2.click===true ? 'clicked' : '']">{{n.step5.r1.c2.value}}</div>
+                    <div class="c" id="5_1_3" v-on:click="cn" v-bind:class="[n.step5.r1.c3.value===1 ? 'l' : 'b', n.step5.r1.c3.click===true ? 'clicked' : '']">{{n.step5.r1.c3.value}}</div>
+                    <div class="c" id="5_1_4" v-on:click="cn" v-bind:class="[n.step5.r1.c4.value===1 ? 'l' : 'b', n.step5.r1.c4.click===true ? 'clicked' : '']">{{n.step5.r1.c4.value}}</div>
+                    <div class="c" id="5_1_5" v-on:click="cn" v-bind:class="[n.step5.r1.c5.value===1 ? 'l' : 'b', n.step5.r1.c5.click===true ? 'clicked' : '']">{{n.step5.r1.c5.value}}</div><br>
+                    <div class="c" id="5_2_1" v-on:click="cn" v-bind:class="[n.step5.r2.c1.value===1 ? 'l' : 'b', n.step5.r2.c1.click===true ? 'clicked' : '']">{{n.step5.r2.c1.value}}</div>
+                    <div class="c" id="5_2_2" v-on:click="cn" v-bind:class="[n.step5.r2.c2.value===1 ? 'l' : 'b', n.step5.r2.c2.click===true ? 'clicked' : '']">{{n.step5.r2.c2.value}}</div>
+                    <div class="c" id="5_2_3" v-on:click="cn" v-bind:class="[n.step5.r2.c3.value===1 ? 'l' : 'b', n.step5.r2.c3.click===true ? 'clicked' : '']">{{n.step5.r2.c3.value}}</div>
+                    <div class="c" id="5_2_4" v-on:click="cn" v-bind:class="[n.step5.r2.c4.value===1 ? 'l' : 'b', n.step5.r2.c4.click===true ? 'clicked' : '']">{{n.step5.r2.c4.value}}</div>
+                    <div class="c" id="5_2_5" v-on:click="cn" v-bind:class="[n.step5.r2.c5.value===1 ? 'l' : 'b', n.step5.r2.c5.click===true ? 'clicked' : '']">{{n.step5.r2.c5.value}}</div><br>
+                    <div class="c" id="5_3_1" v-on:click="cn" v-bind:class="[n.step5.r3.c1.value===1 ? 'l' : 'b', n.step5.r3.c1.click===true ? 'clicked' : '']">{{n.step5.r3.c1.value}}</div>
+                    <div class="c" id="5_3_2" v-on:click="cn" v-bind:class="[n.step5.r3.c2.value===1 ? 'l' : 'b', n.step5.r3.c2.click===true ? 'clicked' : '']">{{n.step5.r3.c2.value}}</div>
+                    <div class="c" id="5_3_3" v-on:click="cn" v-bind:class="[n.step5.r3.c3.value===1 ? 'l' : 'b', n.step5.r3.c3.click===true ? 'clicked' : '']">{{n.step5.r3.c3.value}}</div>
+                    <div class="c" id="5_3_4" v-on:click="cn" v-bind:class="[n.step5.r3.c4.value===1 ? 'l' : 'b', n.step5.r3.c4.click===true ? 'clicked' : '']">{{n.step5.r3.c4.value}}</div>
+                    <div class="c" id="5_3_5" v-on:click="cn" v-bind:class="[n.step5.r3.c5.value===1 ? 'l' : 'b', n.step5.r3.c5.click===true ? 'clicked' : '']">{{n.step5.r3.c5.value}}</div><br>
+                    <div class="c" id="5_4_1" v-on:click="cn" v-bind:class="[n.step5.r4.c1.value===1 ? 'l' : 'b', n.step5.r4.c1.click===true ? 'clicked' : '']">{{n.step5.r4.c1.value}}</div>
+                    <div class="c" id="5_4_2" v-on:click="cn" v-bind:class="[n.step5.r4.c2.value===1 ? 'l' : 'b', n.step5.r4.c2.click===true ? 'clicked' : '']">{{n.step5.r4.c2.value}}</div>
+                    <div class="c" id="5_4_3" v-on:click="cn" v-bind:class="[n.step5.r4.c3.value===1 ? 'l' : 'b', n.step5.r4.c3.click===true ? 'clicked' : '']">{{n.step5.r4.c3.value}}</div>
+                    <div class="c" id="5_4_4" v-on:click="cn" v-bind:class="[n.step5.r4.c4.value===1 ? 'l' : 'b', n.step5.r4.c4.click===true ? 'clicked' : '']">{{n.step5.r4.c4.value}}</div>
+                    <div class="c" id="5_4_5" v-on:click="cn" v-bind:class="[n.step5.r4.c5.value===1 ? 'l' : 'b', n.step5.r4.c5.click===true ? 'clicked' : '']">{{n.step5.r4.c5.value}}</div><br>
+                    <div class="c" id="5_5_1" v-on:click="cn" v-bind:class="[n.step5.r5.c1.value===1 ? 'l' : 'b', n.step5.r5.c1.click===true ? 'clicked' : '']">{{n.step5.r5.c1.value}}</div>
+                    <div class="c" id="5_5_2" v-on:click="cn" v-bind:class="[n.step5.r5.c2.value===1 ? 'l' : 'b', n.step5.r5.c2.click===true ? 'clicked' : '']">{{n.step5.r5.c2.value}}</div>
+                    <div class="c" id="5_5_3" v-on:click="cn" v-bind:class="[n.step5.r5.c3.value===1 ? 'l' : 'b', n.step5.r5.c3.click===true ? 'clicked' : '']">{{n.step5.r5.c3.value}}</div>
+                    <div class="c" id="5_5_4" v-on:click="cn" v-bind:class="[n.step5.r5.c4.value===1 ? 'l' : 'b', n.step5.r5.c4.click===true ? 'clicked' : '']">{{n.step5.r5.c4.value}}</div>
+                    <div class="c" id="5_5_5" v-on:click="cn" v-bind:class="[n.step5.r5.c5.value===1 ? 'l' : 'b', n.step5.r5.c5.click===true ? 'clicked' : '']">{{n.step5.r5.c5.value}}</div>
+                </div>
+            </div>
+            <div id="game">
+                <div id="n">
+                    <div id="turn">
+                        <div class="c" v-bind:class="[currentColor===1 ? 'l' : 'b']"></div>
+                    </div>
+                </div>
+                <div id="board4">
+                    <div class="c" id="5_1_1" v-on:click="cn" v-bind:class="[n.step5.r1.c1.value===1 ? 'l' : 'b', n.step5.r1.c1.click===true ? 'clicked' : '']">{{n.step5.r1.c1.value}}</div>
+                    <div class="c" id="5_1_2" v-on:click="cn" v-bind:class="[n.step5.r1.c2.value===1 ? 'l' : 'b', n.step5.r1.c2.click===true ? 'clicked' : '']">{{n.step5.r1.c2.value}}</div>
+                    <div class="c" id="5_1_3" v-on:click="cn" v-bind:class="[n.step5.r1.c3.value===1 ? 'l' : 'b', n.step5.r1.c3.click===true ? 'clicked' : '']">{{n.step5.r1.c3.value}}</div>
+                    <div class="c" id="5_1_4" v-on:click="cn" v-bind:class="[n.step5.r1.c4.value===1 ? 'l' : 'b', n.step5.r1.c4.click===true ? 'clicked' : '']">{{n.step5.r1.c4.value}}</div>
+                    <div class="c" id="5_1_5" v-on:click="cn" v-bind:class="[n.step5.r1.c5.value===1 ? 'l' : 'b', n.step5.r1.c5.click===true ? 'clicked' : '']">{{n.step5.r1.c5.value}}</div><br>
+                    <div class="c even" id="4_1_1" v-on:click="cn" v-bind:class="[n.step4.r1.c1.value===1 ? 'l' : 'b', n.step4.r1.c1.click===true ? 'clicked' : '']">{{n.step4.r1.c1.value}}</div>
+                    <div class="c" id="4_1_2" v-on:click="cn" v-bind:class="[n.step4.r1.c2.value===1 ? 'l' : 'b', n.step4.r1.c2.click===true ? 'clicked' : '']">{{n.step4.r1.c2.value}}</div>
+                    <div class="c" id="4_1_3" v-on:click="cn" v-bind:class="[n.step4.r1.c3.value===1 ? 'l' : 'b', n.step4.r1.c3.click===true ? 'clicked' : '']">{{n.step4.r1.c3.value}}</div>
+                    <div class="c" id="4_1_4" v-on:click="cn" v-bind:class="[n.step4.r1.c4.value===1 ? 'l' : 'b', n.step4.r1.c4.click===true ? 'clicked' : '']">{{n.step4.r1.c4.value}}</div><br>
+                    <div class="c" id="5_2_1" v-on:click="cn" v-bind:class="[n.step5.r2.c1.value===1 ? 'l' : 'b', n.step5.r2.c1.click===true ? 'clicked' : '']">{{n.step5.r2.c1.value}}</div>
+                    <div class="c" id="3_1_1" v-on:click="cn" v-bind:class="[n.step3.r1.c1.value===1 ? 'l' : 'b', n.step3.r1.c1.click===true ? 'clicked' : '']">{{n.step3.r1.c1.value}}</div>
+                    <div class="c" id="3_1_2" v-on:click="cn" v-bind:class="[n.step3.r1.c2.value===1 ? 'l' : 'b', n.step3.r1.c2.click===true ? 'clicked' : '']">{{n.step3.r1.c2.value}}</div>
+                    <div class="c" id="3_1_3" v-on:click="cn" v-bind:class="[n.step3.r1.c3.value===1 ? 'l' : 'b', n.step3.r1.c3.click===true ? 'clicked' : '']">{{n.step3.r1.c3.value}}</div>
+                    <div class="c" id="5_2_5" v-on:click="cn" v-bind:class="[n.step5.r2.c5.value===1 ? 'l' : 'b', n.step5.r2.c5.click===true ? 'clicked' : '']">{{n.step5.r2.c5.value}}</div><br>
+                    <div class="c even" id="4_2_1" v-on:click="cn" v-bind:class="[n.step4.r2.c1.value===1 ? 'l' : 'b', n.step4.r2.c1.click===true ? 'clicked' : '']">{{n.step4.r2.c1.value}}</div>
+                    <div class="c" id="2_1_1" v-on:click="cn" v-bind:class="[n.step2.r1.c1.value===1 ? 'l' : 'b', n.step2.r1.c1.click===true ? 'clicked' : '']">{{n.step2.r1.c1.value}}</div>
+                    <div class="c" id="2_1_2" v-on:click="cn" v-bind:class="[n.step2.r1.c2.value===1 ? 'l' : 'b', n.step2.r1.c2.click===true ? 'clicked' : '']">{{n.step2.r1.c2.value}}</div>
+                    <div class="c" id="4_2_4" v-on:click="cn" v-bind:class="[n.step4.r2.c4.value===1 ? 'l' : 'b', n.step4.r2.c4.click===true ? 'clicked' : '']">{{n.step4.r2.c4.value}}</div><br>
+                    <div class="c" id="5_3_1" v-on:click="cn" v-bind:class="[n.step5.r3.c1.value===1 ? 'l' : 'b', n.step5.r3.c1.click===true ? 'clicked' : '']">{{n.step5.r3.c1.value}}</div>
+                    <div class="c" id="3_2_1" v-on:click="cn" v-bind:class="[n.step3.r2.c1.value===1 ? 'l' : 'b', n.step3.r2.c1.click===true ? 'clicked' : '']">{{n.step3.r2.c1.value}}</div>
+                    <div class="c" id="1_1_1" v-on:click="cn" v-bind:class="[n.step1.r1.c1.value===1 ? 'l' : 'b', n.step1.r1.c1.click===true ? 'clicked' : '']">{{n.step1.r1.c1.value}}</div>
+                    <div class="c" id="3_2_3" v-on:click="cn" v-bind:class="[n.step3.r2.c3.value===1 ? 'l' : 'b', n.step3.r2.c3.click===true ? 'clicked' : '']">{{n.step3.r2.c3.value}}</div>
+                    <div class="c" id="5_3_5" v-on:click="cn" v-bind:class="[n.step5.r3.c5.value===1 ? 'l' : 'b', n.step5.r3.c5.click===true ? 'clicked' : '']">{{n.step5.r3.c5.value}}</div><br>
+                    <div class="c even" id="4_3_1" v-on:click="cn" v-bind:class="[n.step4.r3.c1.value===1 ? 'l' : 'b', n.step4.r3.c1.click===true ? 'clicked' : '']">{{n.step4.r3.c1.value}}</div>
+                    <div class="c" id="2_2_1" v-on:click="cn" v-bind:class="[n.step2.r2.c1.value===1 ? 'l' : 'b', n.step2.r2.c1.click===true ? 'clicked' : '']">{{n.step2.r2.c1.value}}</div>
+                    <div class="c" id="2_2_2" v-on:click="cn" v-bind:class="[n.step2.r2.c2.value===1 ? 'l' : 'b', n.step2.r2.c2.click===true ? 'clicked' : '']">{{n.step2.r2.c2.value}}</div>
+                    <div class="c" id="4_3_4" v-on:click="cn" v-bind:class="[n.step4.r3.c4.value===1 ? 'l' : 'b', n.step4.r3.c4.click===true ? 'clicked' : '']">{{n.step4.r3.c4.value}}</div><br>
+                    <div class="c" id="5_4_1" v-on:click="cn" v-bind:class="[n.step5.r4.c1.value===1 ? 'l' : 'b', n.step5.r4.c1.click===true ? 'clicked' : '']">{{n.step5.r4.c1.value}}</div>
+                    <div class="c" id="3_3_1" v-on:click="cn" v-bind:class="[n.step3.r3.c1.value===1 ? 'l' : 'b', n.step3.r3.c1.click===true ? 'clicked' : '']">{{n.step3.r3.c1.value}}</div>
+                    <div class="c" id="3_3_2" v-on:click="cn" v-bind:class="[n.step3.r3.c2.value===1 ? 'l' : 'b', n.step3.r3.c2.click===true ? 'clicked' : '']">{{n.step3.r3.c2.value}}</div>
+                    <div class="c" id="3_3_3" v-on:click="cn" v-bind:class="[n.step3.r3.c3.value===1 ? 'l' : 'b', n.step3.r3.c3.click===true ? 'clicked' : '']">{{n.step3.r3.c3.value}}</div>
+                    <div class="c" id="5_4_5" v-on:click="cn" v-bind:class="[n.step5.r4.c5.value===1 ? 'l' : 'b', n.step5.r4.c5.click===true ? 'clicked' : '']">{{n.step5.r4.c5.value}}</div><br>
+                    <div class="c even" id="4_4_1" v-on:click="cn" v-bind:class="[n.step4.r4.c1.value===1 ? 'l' : 'b', n.step4.r4.c1.click===true ? 'clicked' : '']">{{n.step4.r4.c1.value}}</div>
+                    <div class="c" id="4_4_2" v-on:click="cn" v-bind:class="[n.step4.r4.c2.value===1 ? 'l' : 'b', n.step4.r4.c2.click===true ? 'clicked' : '']">{{n.step4.r4.c2.value}}</div>
+                    <div class="c" id="4_4_3" v-on:click="cn" v-bind:class="[n.step4.r4.c3.value===1 ? 'l' : 'b', n.step4.r4.c3.click===true ? 'clicked' : '']">{{n.step4.r4.c3.value}}</div>
+                    <div class="c" id="4_4_4" v-on:click="cn" v-bind:class="[n.step4.r4.c4.value===1 ? 'l' : 'b', n.step4.r4.c4.click===true ? 'clicked' : '']">{{n.step4.r4.c4.value}}</div><br>
+                    <div class="c" id="5_5_1" v-on:click="cn" v-bind:class="[n.step5.r5.c1.value===1 ? 'l' : 'b', n.step5.r5.c1.click===true ? 'clicked' : '']">{{n.step5.r5.c1.value}}</div>
+                    <div class="c" id="5_5_2" v-on:click="cn" v-bind:class="[n.step5.r5.c2.value===1 ? 'l' : 'b', n.step5.r5.c2.click===true ? 'clicked' : '']">{{n.step5.r5.c2.value}}</div>
+                    <div class="c" id="5_5_3" v-on:click="cn" v-bind:class="[n.step5.r5.c3.value===1 ? 'l' : 'b', n.step5.r5.c3.click===true ? 'clicked' : '']">{{n.step5.r5.c3.value}}</div>
+                    <div class="c" id="5_5_4" v-on:click="cn" v-bind:class="[n.step5.r5.c4.value===1 ? 'l' : 'b', n.step5.r5.c4.click===true ? 'clicked' : '']">{{n.step5.r5.c4.value}}</div>
+                    <div class="c" id="5_5_5" v-on:click="cn" v-bind:class="[n.step5.r5.c5.value===1 ? 'l' : 'b', n.step5.r5.c5.click===true ? 'clicked' : '']">{{n.step5.r5.c5.value}}</div>
+                </div>
+                <div id="nu">
+                    <div id="on_number">{{number}} /
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div id="in">
+                    <div id="initButton" v-on:click="initialize">初期化する</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
