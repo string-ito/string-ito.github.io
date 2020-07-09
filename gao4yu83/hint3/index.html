@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4b5n</title>
+    <title>4b5n hint3</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11" type="text/javascript"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,6 +12,21 @@
 <body>
 
     <div id="app">
+
+        <div id="hint">
+            <div class="front plane f1" v-bind:class="[{rc:n.w1r1c1===1},w1c]"></div>
+            <div class="front plane f2" v-bind:class="[{rc:n.w1r1c2===1},w1c]"></div>
+            <div class="front plane f3" v-bind:class="[{rc:n.w1r2c1===1},w1c]"></div>
+            <div class="front plane f4" v-bind:class="[{rc:n.w1r2c2===1},w1c]"></div>
+            <div class="top plane t1" v-bind:class="[{rc:n.w2r1c1===1},w2c]"></div>
+            <div class="top plane t2" v-bind:class="[{rc:n.w2r1c2===1},w2c]"></div>
+            <div class="top plane t3" v-bind:class="[{rc:n.w2r2c1===1},w2c]"></div>
+            <div class="top plane t4" v-bind:class="[{rc:n.w2r2c2===1},w2c]"></div>
+            <div class="left plane l1" v-bind:class="[{rc:n.w4r1c1===1},w4c]"></div>
+            <div class="left plane l2" v-bind:class="[{rc:n.w4r1c2===1},w4c]"></div>
+            <div class="left plane l3" v-bind:class="[{rc:n.w4r2c1===1},w4c]"></div>
+            <div class="left plane l4" v-bind:class="[{rc:n.w4r2c2===1},w4c]"></div>
+        </div>
 
         <div id="num">
             <div id="n1">

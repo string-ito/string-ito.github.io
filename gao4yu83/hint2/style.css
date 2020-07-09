@@ -10,6 +10,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 100px;
+    padding-top: 230px;
 }
 
 #initButton {
@@ -21,7 +22,7 @@ body {
     text-align: center;
     height: 35px;
     line-height: 35px;
-    margin-left: 50px;
+    margin-left: 25px;
     border-radius: 20px;
     cursor: pointer;
 }
@@ -55,27 +56,27 @@ body {
 }
 
 .c1 {
-    background-color: rgb(85, 163, 41);
+    background-color: rgb(227, 72, 30) !important;
 }
 
 .c2 {
-    background-color: rgb(252, 245, 76);
+    background-color: white !important;
 }
 
 .c3 {
-    background-color: rgb(227, 72, 30);
+    background-color: rgb(85, 163, 41) !important;
 }
 
 .c4 {
-    background-color: rgb(230, 153, 56);
+    background-color: rgb(52, 103, 248) !important;
 }
 
 .c5 {
-    background-color: rgb(52, 103, 248);
+    background-color: rgb(252, 245, 76) !important;
 }
 
 .c6 {
-    background-color: white;
+    background-color: rgb(230, 153, 56) !important;
 }
 
 #button {
@@ -138,4 +139,98 @@ body {
 
 #w6 .panel {
     background-color: orchid;
+}
+
+#hint {
+    position: relative;
+    margin: 100px auto;
+    transform-style: preserve-3d;
+    transform: rotateX(-20deg) rotateY(-50deg);
+    top: -190px;
+    left: 48px;
+}
+
+.plane {
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    position: absolute;
+    background-color: cornsilk;
+}
+
+.front {
+    top: 0;
+    left: 0;
+    transform: translateZ(50px);
+}
+
+.f1 {
+    top: 0;
+    left: 0;
+}
+
+.f2 {
+    top: 0;
+    left: 50px;
+}
+
+.f3 {
+    top: 50px;
+    left: 0;
+}
+
+.f4 {
+    top: 50px;
+    left: 50px;
+}
+
+.top {
+    transform: rotateX(90deg);
+}
+
+.t1 {
+    top: -38px;
+    left: 29px;
+}
+
+.t2 {
+    top: -38px;
+    left: 79px;
+}
+
+.t3 {
+    top: -10px;
+    left: -30px;
+}
+
+.t4 {
+    top: -10px;
+    left: 20px;
+}
+
+.left {
+    top: 0;
+    left: 50px;
+    transform: rotateY(90deg);
+}
+
+.l1 {
+    top: 14px;
+    left: 45px;
+}
+
+.l2 {
+    top: -14px;
+    left: 104px;
+}
+
+.l3 {
+    top: 64px;
+    left: 45px;
+}
+
+.l4 {
+    top: 36px;
+    left: 104px;
 }

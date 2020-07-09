@@ -1,5 +1,5 @@
 var initNum = () => {
-    var a = {
+    return {
         w1r1c1: 1,
         w1r1c2: 4,
         w1r2c1: 6,
@@ -25,35 +25,6 @@ var initNum = () => {
         w6r2c1: 3,
         w6r2c2: 6,
     };
-    var b = {
-        w1r1c1: 1,
-        w1r1c2: 3,
-        w1r2c1: 4,
-        w1r2c2: 6,
-        w2r1c1: 5,
-        w2r1c2: 1,
-        w2r2c1: 4,
-        w2r2c2: 4,
-        w3r1c1: 5,
-        w3r1c2: 6,
-        w3r2c1: 2,
-        w3r2c2: 1,
-        w4r1c1: 3,
-        w4r1c2: 6,
-        w4r2c1: 4,
-        w4r2c2: 1,
-        w5r1c1: 5,
-        w5r1c2: 2,
-        w5r2c1: 5,
-        w5r2c2: 2,
-        w6r1c1: 2,
-        w6r1c2: 6,
-        w6r2c1: 3,
-        w6r2c2: 3,
-    };
-
-    return a;
-
 }
 
 var app = new Vue({
@@ -63,7 +34,7 @@ var app = new Vue({
         c: false
     },
     methods: {
-        c1down: function() {
+        b1: function() {
             var n = this.n;
             var current1 = n.w1r1c1;
             n.w1r1c1 = n.w2r1c1;
@@ -83,7 +54,7 @@ var app = new Vue({
             n.w3r2c2 = n.w3r1c2;
             n.w3r1c2 = current3;
         },
-        c2down: function() {
+        b2: function() {
             var n = this.n;
             var current = n.w1r1c2;
             n.w1r1c2 = n.w2r1c2;
@@ -103,7 +74,7 @@ var app = new Vue({
             n.w4r2c2 = n.w4r2c1;
             n.w4r2c1 = current4;
         },
-        r1right: function() {
+        b3: function() {
             var n = this.n;
             var current = n.w1r1c1;
             n.w1r1c1 = n.w3r1c1;
@@ -123,7 +94,7 @@ var app = new Vue({
             n.w2r2c2 = n.w2r2c1;
             n.w2r2c1 = current4;
         },
-        r2right: function() {
+        b4: function() {
             var n = this.n;
             var current = n.w1r2c1;
             n.w1r2c1 = n.w3r2c1;
@@ -225,10 +196,3 @@ var app = new Vue({
 var c = () => {
     alert("clear!");
 }
-
-/*
-W2
-W3 W1 W4
-W5
-W6
-*/
