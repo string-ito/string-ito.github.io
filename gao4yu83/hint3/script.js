@@ -31,7 +31,8 @@ var app = new Vue({
     el: "#app",
     data: {
         n: initNum(),
-        c: false
+        c: false,
+        m: ""
     },
     methods: {
         b1: function() {
@@ -186,6 +187,7 @@ var app = new Vue({
                 if (!this.c && this.cw1() && this.cw2() && this.cw3() && this.cw4() && this.cw5()) {
                     setTimeout(c, 50);
                     this.c = true;
+                    this.m = "password : buckrubies";
                 }
             },
             deep: true
@@ -194,5 +196,5 @@ var app = new Vue({
 });
 
 var c = () => {
-    alert("clear!");
+    alert("clear!\npassword : buckrubies");
 }

@@ -159,6 +159,14 @@ body {
     background-color: cornsilk;
 }
 
+.planec {
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    border-radius: 90%;
+}
+
 .front {
     top: 0;
     left: 0;
@@ -185,6 +193,26 @@ body {
     left: 50px;
 }
 
+.f1c {
+    top: 17px;
+    left: 15px;
+}
+
+.f2c {
+    top: 17px;
+    left: 65px;
+}
+
+.f3c {
+    top: 67px;
+    left: 15px;
+}
+
+.f4c {
+    top: 67px;
+    left: 65px;
+}
+
 .top {
     transform: rotateX(90deg);
 }
@@ -207,6 +235,26 @@ body {
 .t4 {
     top: -10px;
     left: 20px;
+}
+
+.t1c {
+    top: -22px;
+    left: 46px;
+}
+
+.t2c {
+    top: -24px;
+    left: 100px;
+}
+
+.t3c {
+    top: 5px;
+    left: -11px;
+}
+
+.t4c {
+    top: 6px;
+    left: 35px;
 }
 
 .left {
@@ -235,6 +283,33 @@ body {
     left: 104px;
 }
 
+.l1c {
+    top: 31px;
+    left: 63px;
+}
+
+.l2c {
+    top: 4px;
+    left: 121px;
+}
+
+.l3c {
+    top: 81px;
+    left: 63px;
+}
+
+.l4c {
+    top: 54px;
+    left: 121px;
+}
+
 .rc {
     background-color: rgb(227, 72, 30);
+}
+
+#m {
+    top: 44px;
+    position: absolute;
+    left: 135px;
+    color: red;
 }
