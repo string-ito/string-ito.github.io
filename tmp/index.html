@@ -15,23 +15,26 @@
 
     <input type="submit" value="a">
 </form>
-<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script>
-var settings = {
-  "async": true,
-  "crossDomain": true,
-  "url": "https://yufukirima.sakura.ne.jp/events/show.php?k=abcdab26f117e2bd95d37a23098c725979a1d46bb6a1319d90d2041a93488592&id=705&mkey=22635016acbddba&utm_source=fanbox&utm_medium=cpc&utm_term=705",
-  "method": "PUT",
-  "headers": {
-    "cache-control": "no-cache",
-    "postman-token": "a831d93d-f743-8ca0-0155-c8675b20b5f9"
-  }
-}
+  
+var data = null;
 
-$.ajax(settings).done(function (response) {
-  console.log(response);
+var xhr = new XMLHttpRequest();
+xhr.withCredentials = true;
+
+xhr.addEventListener("readystatechange", function () {
+  if (this.readyState === 4) {
+    console.log(this.responseText);
+  }
 });
-</script>
+
+xhr.open("PUT", "https://yufukirima.sakura.ne.jp/events/show.php?k=abcdab26f117e2bd95d37a23098c725979a1d46bb6a1319d90d2041a93488592&id=705&mkey=22635016acbddba&utm_source=fanbox&utm_medium=cpc&utm_term=705");
+xhr.setRequestHeader("cache-control", "no-cache");
+xhr.setRequestHeader("postman-token", "44e2697a-b5c0-5257-15f7-1f97f6634092");
+
+xhr.send(data);
+  
+  </script>
 
 </body>
 </html>
